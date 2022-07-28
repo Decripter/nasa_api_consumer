@@ -30,7 +30,7 @@ class _NasaApodPageState extends State<NasaApodPage> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text("Showroom Car"),
+              const Text("Nasa Api Consumer"),
               GestureDetector(
                 child: const Icon(Icons.add),
                 onTap: () {
