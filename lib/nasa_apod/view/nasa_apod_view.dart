@@ -13,14 +13,11 @@ class NasaApodPage extends StatefulWidget {
 
 class _NasaApodPageState extends State<NasaApodPage> {
   final store = NasaApodStore(NasaApodService(Uno()));
-  String anuncianteId = '';
-  String marcaId = '';
-  String modeloId = '';
 
   @override
   void initState() {
     super.initState();
-    store.fetchAnuncios("");
+    store.fetchAnuncios("&start_date=2020-01-01&end_date=2020-02-10");
   }
 
   @override
